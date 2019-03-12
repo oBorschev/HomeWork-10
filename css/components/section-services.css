@@ -1,0 +1,38 @@
+/* SECTION */
+
+.section-services{
+    padding-top: 4.6rem;
+    margin-bottom: 5rem;
+}
+.section-services__title{
+    margin-bottom: 2.3rem;
+    font-size: 2.4rem;
+}
+.services-list__items{
+    width: 38.1rem;
+}
+.services-item__title{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+.section-services__header{
+    margin-bottom: 6.5rem;
+    font-size: 3rem;
+}
+.section-services__header::after{
+    content: "";
+    border-bottom: 3px solid #f38181;
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 4.3rem;
+}
+.services-item--svg{
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: var(--color-blue);
+}
+.services-list__items:not(:nth-child(n+4)){
+    margin-bottom: 5.6rem;
+
+}

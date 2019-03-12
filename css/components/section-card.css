@@ -1,0 +1,184 @@
+/* SECTION-CARD */
+
+.section-card{
+    padding-top: 4.6rem;
+    margin-bottom: 8.3rem;
+}
+.section-card__title{
+    margin-bottom: 2.3rem;
+}
+.section-card__header{
+    margin-bottom: 4.5rem;
+}
+.section-card__header::after{
+    content: "";
+    border-bottom: 3px solid #f38181;
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 4.3rem;
+}
+.section-card__list{
+    margin-top: 9.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.section-card__items{
+    position: relative;
+}
+.section-card__items--name{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.section-card__items--image{
+    margin-bottom: 2.6rem;
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+    transition: -webkit-box-shadow 0.3s linear;
+    -o-transition: box-shadow 0.3s linear;
+    transition: box-shadow 0.3s linear;
+    transition: box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
+}
+.section-card__items--name{
+    margin-bottom: 1.6rem;
+}
+
+/* OVERLAY */
+
+.overlay{
+    position: absolute;
+    width: 38rem;
+    height: 47rem;
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(243, 129, 129,0.7)),to(rgba(252, 227, 138,0.7)));
+    background: -webkit-linear-gradient(rgba(243, 129, 129,0.7),rgba(252, 227, 138,0.7));
+    background: -o-linear-gradient(rgba(243, 129, 129,0.7),rgba(252, 227, 138,0.7));
+    background: linear-gradient(rgba(243, 129, 129,0.7),rgba(252, 227, 138,0.7));
+    visibility: hidden;
+}
+
+.overlay__icon-list{
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.overlay__icon-list--item{
+    width: 5.6rem;
+    height: 5.6rem;
+    background-color: #fce38a;
+    -webkit-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+.overlay__icon-list--item:hover{
+    background-color: var(--color-red);
+}
+.overlay__icon-list--item:hover .overlay__icon--svg{
+    fill: var(--color-white);
+}
+.overlay__icon-list--item:not(:last-child){
+    margin-right: 0.1rem;
+}
+.overlay__icon-list--link{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 5.6rem;
+    height: 5.6rem;
+}
+.overlay__icon--svg{
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: var(--color-red);
+}
+
+  .section-card__items:hover .overlay{
+    visibility: visible;
+    left: -10px;
+    top: -10px;
+}
+.section-card__items:hover .section-card__items--image{
+    -webkit-box-shadow: #95e1d3 10px 10px;
+            box-shadow: #95e1d3 10px 10px;
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+}
+
+/* FOOTER */
+.footer{
+    min-height: 6rem;
+    border-top: 1px solid #999999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.footer__text{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.footer__link--author{
+    color: var(--color-red);
+    display: inline-block;
+}
+.footer__link--author:hover{
+    text-decoration: none;
+    color: var(--color-hover);
+}
+
+input[type="email"]{
+    width: 23rem;
+    height: 4rem;
+}
+
+.form__footer--subscribe{
+    width: 15rem;
+    height: 4rem;
+    border: none;
+    color: var(--color-white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: var(--color-blue);
+}
+
+.form__footer--subscribe:hover{
+    cursor: pointer;
+}
+.form__footer--email{
+    font-family: var(--roboto-font);
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-descr);
+    border: 1px #e7e7e7 solid;
+}
+  

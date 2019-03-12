@@ -1,0 +1,107 @@
+/* HEADER */
+
+.wrapper{
+    width: 120rem;
+    margin: 0 auto;
+}
+.inner{
+    margin: 0 auto;
+    width: 120rem;
+}
+.header{
+    color: var(--color-white);
+    padding-top: 3.9rem;
+    padding-bottom: 23rem;
+}
+.header-margin{
+    margin-bottom: 17.9rem;
+}
+.wrapper-header{
+    background: url("../../img/picture-min.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(-o-min-device-pixel-ratio: 2/1), 
+(min-resolution: 192dpi) { 
+    .wrapper-header{
+        background: url("../../img/picture@2x-min.png") no-repeat;
+    }
+}
+
+/* LOGO */
+.logo{
+    font-size: 3rem;
+}
+
+/* NAVIGATION */
+.navigation__link{
+    font-size: 1.4rem;
+    font-weight: regular;
+}
+.navigation__link:after{
+    display: block;
+    margin-bottom: -10px;
+    width: 0;
+    height: 3px;
+    content: "";
+    background-color: var(--color-hover);
+    -webkit-transition: width 0.01s liner;
+    -o-transition: width 0.01s liner;
+    transition: width 0.01s liner;
+}
+.navigation__link:hover::after,
+.navigation__link:focus::after{
+    width: 100%;
+    -webkit-transform: translateY(12px);
+        -ms-transform: translateY(12px);
+            transform: translateY(12px);
+}
+.navigation__link:hover,
+.logo:hover,
+.bannet__link:hover{
+    color: var(--color-hover);
+}
+.navigation{
+    margin-right: 5.2rem;
+}
+
+/* ADD NAVIGATION */
+.search--svg,
+.cart--svg,
+.search,
+.cart{
+    width: 1.8rem;
+    height: 1.5rem;
+    fill: var(--color-white);
+}
+.search--svg:hover,
+.cart--svg:hover{
+    fill: var(--color-hover);
+}
+
+/* BANNER */
+.banner__title{
+    font-size: 7.2rem;
+    margin-bottom: 4.2rem;
+}
+.banner__header{
+    font-size: 15rem;
+    margin-bottom: 12.5rem;
+    line-height: 12rem;
+}
+.banner__link{
+    font-size: 1.4rem;
+    width: 15.8rem;
+    height: 4rem;
+    border: 3px solid var(--color-white); 
+    line-height: 3.5rem;
+}
+.banner__link:hover{
+    color: var(--color-hover);
+    border-color: var(--color-hover);
+}
+  

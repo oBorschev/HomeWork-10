@@ -1,0 +1,13 @@
+:root{
+    font-size:62.5%;
+    --main-font: Montserrat, serif;
+    --roboto-font: Roboto, serif;
+    --title-font: Kaushan Script, serif;
+    --color-white: #ffffff;
+    --color-hover: #fce38a;
+    --color-dark: #333333;
+    --color-descr: #999999;
+    --color-blue: #95e1d3;
+    --color-red:#f38181;
+}
+  
