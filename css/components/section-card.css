@@ -57,7 +57,7 @@
     background: -webkit-linear-gradient(rgba(243, 129, 129,0.7),rgba(252, 227, 138,0.7));
     background: -o-linear-gradient(rgba(243, 129, 129,0.7),rgba(252, 227, 138,0.7));
     background: linear-gradient(rgba(243, 129, 129,0.7),rgba(252, 227, 138,0.7));
-    visibility: hidden;
+    display: none;
 }
 
 .overlay__icon-list{
@@ -113,7 +113,7 @@
 }
 
   .section-card__items:hover .overlay{
-    visibility: visible;
+    display: block;
     left: -10px;
     top: -10px;
 }
